@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BodaController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [BodaController::class, 'invitacion'])->name('boda.invitacion');
